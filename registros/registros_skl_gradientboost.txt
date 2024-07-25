@@ -1,0 +1,116 @@
+########## INÍCIO DE REGISTRO - MODELO Sklearn GradientBoosting 20240701-1439 ##########
+
+Informações geradas em 01-07-2024 às 14:57.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     11.111111%     13.698630%
+Male/Perished...:  77.192982%     88.888889%     86.301370%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     58.333333%
+Female/Perished.:  00.000000%     00.000000%     41.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr     0.285852
+0            Age     0.220702
+1           Fare     0.186301
+5    FamilyTotal     0.069775
+7       Pclass_3     0.067504
+4         isMale     0.055358
+15       Cabin_U     0.020435
+11       Cabin_E     0.016879
+3        Grouped     0.013906
+30     Title_Rev     0.013868
+9        Cabin_C     0.008054
+28     Title_Mrs     0.007621
+10       Cabin_D     0.006443
+6       Pclass_2     0.006224
+16     Title_Col     0.004583
+2       Noblesse     0.004420
+24    Title_Miss     0.003769
+8        Cabin_B     0.003309
+23  Title_Master     0.002315
+22   Title_Major     0.001459
+13       Cabin_G     0.000573
+19      Title_Dr     0.000476
+17     Title_Don     0.000174
+
+Features sem importância:['Cabin_F' 'Cabin_T' 'Title_Dona' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: -0.066212
+Score de validação cruzada: 0.812245
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 1000, 'n_iter_no_change': None, 'random_state': 1, 'subsample': 0.9, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 2, 'warm_start': False}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO Sklearn GradientBoosting 20240701-1522 ##########
+
+Informações geradas em 01-07-2024 às 15:22.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  12.280702%     04.761905%     06.849315%
+Male/Perished...:  87.719298%     95.238095%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     68.055556%
+Female/Perished.:  00.000000%     00.000000%     31.944444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age     0.265824
+1          Fare     0.261491
+27     Title_Mr     0.152145
+4        isMale     0.085639
+5   FamilyTotal     0.063693
+7      Pclass_3     0.052967
+15      Cabin_U     0.043743
+3       Grouped     0.024048
+24   Title_Miss     0.018537
+28    Title_Mrs     0.016545
+6      Pclass_2     0.009658
+11      Cabin_E     0.003943
+9       Cabin_C     0.001767
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.131799
+Score de validação cruzada: 0.842723
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'ccp_alpha': 0.0, 'criterion': 'squared_error', 'init': None, 'learning_rate': 0.031, 'loss': 'log_loss', 'max_depth': 18, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 14, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 200, 'n_iter_no_change': 500, 'random_state': 1, 'subsample': 0.1, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+
+=======================================================================
+
+

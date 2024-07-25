@@ -1,0 +1,20 @@
+########## INÍCIO DE REGISTRO OPTUNA - MODELO Sklearn GradientBoosting ##########
+
+Informações armazenadas em 01-07-2024 às 15:20.
+
+---===+++ Os melhores parâmetros encontrados +++===---
+
+{'loss': 'log_loss', 'n_estimators': 200, 'learning_rate': 0.031, 'criterion': 'squared_error', 'min_samples_split': 14, 'min_samples_leaf': 6, 'max_depth': 18, 'subsample': 0.1}
+
+Obtidos na iteração 14
+Valor de score cross-validation 0.8427225806451613
+
+########## FINAL DE REGISTRO OPTUNA - MODELO Sklearn GradientBoosting ##########
+
+
+########## INÍCIO DE REGISTRO OPTUNA - MODELO Sklearn GradientBoosting ##########
+
+Informações armazenadas em 03-07-2024 às 09:01.
+
+---===+++ Os melhores parâmetros encontrados +++===---
+

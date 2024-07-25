@@ -1,0 +1,1574 @@
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240630-1805 ##########
+
+Informações geradas em 30-06-2024 às 19:15.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  07.017544%     03.174603%     08.219178%
+Male/Perished...:  92.982456%     96.825397%     91.780822%
+                        *              *              *
+Female/Survived.:  94.000000%     100.000000%     93.055556%
+Female/Perished.:  06.000000%     00.000000%     06.944444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr     0.339672
+3        Grouped     0.102163
+5    FamilyTotal     0.090039
+1           Fare     0.082333
+0            Age     0.079674
+15       Cabin_U     0.060883
+4         isMale     0.056478
+9        Cabin_C     0.055795
+23  Title_Master     0.051851
+2       Noblesse     0.028959
+11       Cabin_E     0.028853
+30     Title_Rev     0.023301
+
+Features sem importância:['Pclass_2' 'Pclass_3' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Miss' 'Title_Mlle' 'Title_Mme'
+ 'Title_Mrs' 'Title_Ms' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.116567
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:hinge', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 1, 'max_leaves': 100, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1000, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'hist', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.1, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240630-2008 ##########
+
+Informações geradas em 30-06-2024 às 20:10.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.842105%     07.936508%     09.589041%
+Male/Perished...:  63.157895%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr     0.619700
+11       Cabin_E     0.061739
+2       Noblesse     0.046879
+5    FamilyTotal     0.046540
+7       Pclass_3     0.040490
+4         isMale     0.038861
+15       Cabin_U     0.026872
+1           Fare     0.026334
+3        Grouped     0.020071
+0            Age     0.018111
+24    Title_Miss     0.017338
+6       Pclass_2     0.015747
+28     Title_Mrs     0.008817
+9        Cabin_C     0.008046
+23  Title_Master     0.004453
+
+Features sem importância:['Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.817205
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 10, 'max_leaves': 100, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1500, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.01, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240701-0825 ##########
+
+Informações geradas em 01-07-2024 às 08:26.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr     0.532384
+2      Noblesse     0.105311
+11      Cabin_E     0.092167
+5   FamilyTotal     0.052255
+7      Pclass_3     0.039529
+4        isMale     0.030457
+1          Fare     0.028136
+3       Grouped     0.024926
+0           Age     0.021928
+15      Cabin_U     0.020591
+24   Title_Miss     0.019727
+9       Cabin_C     0.013328
+6      Pclass_2     0.012390
+28    Title_Mrs     0.006870
+
+Features sem importância:['Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev'
+ 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.828283
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1123 ##########
+
+Informações geradas em 03-07-2024 às 11:24.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr     0.563767
+11      Cabin_E     0.113359
+5   FamilyTotal     0.057625
+7      Pclass_3     0.051249
+4        isMale     0.041919
+1          Fare     0.032005
+3       Grouped     0.030950
+15      Cabin_U     0.023807
+0           Age     0.023731
+24   Title_Miss     0.023451
+6      Pclass_2     0.013899
+9       Cabin_C     0.013340
+28    Title_Mrs     0.010898
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.822727
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1134 ##########
+
+Informações geradas em 03-07-2024 às 11:34.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr     0.563767
+11      Cabin_E     0.113359
+5   FamilyTotal     0.057625
+7      Pclass_3     0.051249
+4        isMale     0.041919
+1          Fare     0.032005
+3       Grouped     0.030950
+15      Cabin_U     0.023807
+0           Age     0.023731
+24   Title_Miss     0.023451
+6      Pclass_2     0.013899
+9       Cabin_C     0.013340
+28    Title_Mrs     0.010898
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.795124
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1208 ##########
+
+Informações geradas em 03-07-2024 às 12:09.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr     0.563767
+11      Cabin_E     0.113359
+5   FamilyTotal     0.057625
+7      Pclass_3     0.051249
+4        isMale     0.041919
+1          Fare     0.032005
+3       Grouped     0.030950
+15      Cabin_U     0.023807
+0           Age     0.023731
+24   Title_Miss     0.023451
+6      Pclass_2     0.013899
+9       Cabin_C     0.013340
+28    Title_Mrs     0.010898
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.795124
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1209 ##########
+
+Informações geradas em 03-07-2024 às 12:09.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr     0.563767
+11      Cabin_E     0.113359
+5   FamilyTotal     0.057625
+7      Pclass_3     0.051249
+4        isMale     0.041919
+1          Fare     0.032005
+3       Grouped     0.030950
+15      Cabin_U     0.023807
+0           Age     0.023731
+24   Title_Miss     0.023451
+6      Pclass_2     0.013899
+9       Cabin_C     0.013340
+28    Title_Mrs     0.010898
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.795124
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1215 ##########
+
+Informações geradas em 03-07-2024 às 12:15.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  33.333333%     07.936508%     09.589041%
+Male/Perished...:  66.666667%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     66.666667%
+Female/Perished.:  00.000000%     00.000000%     33.333333%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr     0.481149
+2       Noblesse     0.166509
+11       Cabin_E     0.089748
+5    FamilyTotal     0.045616
+7       Pclass_3     0.040626
+4         isMale     0.035869
+1           Fare     0.023661
+3        Grouped     0.021390
+0            Age     0.018191
+24    Title_Miss     0.018094
+6       Pclass_2     0.016397
+15       Cabin_U     0.016248
+9        Cabin_C     0.011372
+28     Title_Mrs     0.010843
+23  Title_Master     0.004287
+
+Features sem importância:['Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.798760
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1218 ##########
+
+Informações geradas em 03-07-2024 às 12:19.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.842105%     07.936508%     09.589041%
+Male/Perished...:  63.157895%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     62.500000%
+Female/Perished.:  00.000000%     00.000000%     37.500000%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr     0.480072
+2       Noblesse     0.159460
+11       Cabin_E     0.102474
+5    FamilyTotal     0.047874
+7       Pclass_3     0.039790
+15       Cabin_U     0.028058
+1           Fare     0.026005
+3        Grouped     0.025925
+0            Age     0.019533
+24    Title_Miss     0.018785
+4         isMale     0.013766
+9        Cabin_C     0.011717
+6       Pclass_2     0.011342
+28     Title_Mrs     0.009227
+23  Title_Master     0.005970
+
+Features sem importância:['Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.798794
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1225 ##########
+
+Informações geradas em 03-07-2024 às 12:26.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     07.936508%     07.534247%
+Male/Perished...:  75.438596%     92.063492%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     52.777778%
+Female/Perished.:  00.000000%     00.000000%     47.222222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale     0.416848
+7      Pclass_3     0.152558
+5   FamilyTotal     0.079017
+15      Cabin_U     0.062321
+2      Noblesse     0.057404
+11      Cabin_E     0.056066
+1          Fare     0.043413
+0           Age     0.037315
+9       Cabin_C     0.033711
+3       Grouped     0.032744
+6      Pclass_2     0.021044
+10      Cabin_D     0.007560
+
+Features sem importância:['Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.804332
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1231 ##########
+
+Informações geradas em 03-07-2024 às 12:31.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     07.936508%     04.109589%
+Male/Perished...:  78.947368%     92.063492%     95.890411%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     51.388889%
+Female/Perished.:  00.000000%     00.000000%     48.611111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale     0.450455
+7      Pclass_3     0.155262
+5   FamilyTotal     0.080347
+11      Cabin_E     0.078753
+15      Cabin_U     0.069586
+1          Fare     0.043731
+0           Age     0.039129
+3       Grouped     0.037926
+9       Cabin_C     0.021311
+6      Pclass_2     0.020870
+10      Cabin_D     0.002629
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.808036
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1234 ##########
+
+Informações geradas em 03-07-2024 às 12:34.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     07.936508%     04.109589%
+Male/Perished...:  78.947368%     92.063492%     95.890411%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     51.388889%
+Female/Perished.:  00.000000%     00.000000%     48.611111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale     0.450455
+7      Pclass_3     0.155262
+5   FamilyTotal     0.080347
+11      Cabin_E     0.078753
+15      Cabin_U     0.069586
+1          Fare     0.043731
+0           Age     0.039129
+3       Grouped     0.037926
+9       Cabin_C     0.021311
+6      Pclass_2     0.020870
+10      Cabin_D     0.002629
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.808036
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1236 ##########
+
+Informações geradas em 03-07-2024 às 12:37.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     07.936508%     04.109589%
+Male/Perished...:  78.947368%     92.063492%     95.890411%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     51.388889%
+Female/Perished.:  00.000000%     00.000000%     48.611111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale     0.450455
+7      Pclass_3     0.155262
+5   FamilyTotal     0.080347
+11      Cabin_E     0.078753
+15      Cabin_U     0.069586
+1          Fare     0.043731
+0           Age     0.039129
+3       Grouped     0.037926
+9       Cabin_C     0.021311
+6      Pclass_2     0.020870
+10      Cabin_D     0.002629
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.808036
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1349 ##########
+
+Informações geradas em 03-07-2024 às 13:49.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     11.111111%     12.328767%
+Male/Perished...:  77.192982%     88.888889%     87.671233%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     51.388889%
+Female/Perished.:  00.000000%     00.000000%     48.611111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+4     isMale     0.398783
+11  Pclass_3     0.111395
+15   Cabin_E     0.077624
+19   Cabin_U     0.074448
+6     Grupo2     0.055766
+5     Grupo1     0.043977
+1       Fare     0.040863
+7     Grupo3     0.039545
+3    Grouped     0.038418
+0        Age     0.035098
+8     Grupo4     0.034786
+13   Cabin_C     0.022969
+10  Pclass_2     0.016952
+14   Cabin_D     0.009377
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.806201
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1353 ##########
+
+Informações geradas em 03-07-2024 às 13:53.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     07.936508%     09.589041%
+Male/Perished...:  64.912281%     92.063492%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     62.500000%
+Female/Perished.:  00.000000%     00.000000%     37.500000%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+32      Title_Mr     0.495166
+2       Noblesse     0.143351
+16       Cabin_E     0.072579
+5    FamilyTotal     0.050349
+12      Pclass_3     0.041017
+20       Cabin_U     0.024954
+9         Grupo4     0.024905
+1           Fare     0.021230
+3        Grouped     0.018699
+29    Title_Miss     0.018022
+0            Age     0.016366
+7         Grupo2     0.015224
+14       Cabin_C     0.011412
+28  Title_Master     0.010397
+4         isMale     0.010236
+11      Pclass_2     0.009906
+8         Grupo3     0.008556
+33     Title_Mrs     0.006413
+6         Grupo1     0.001216
+
+Features sem importância:['Grupo5' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.802497
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1408 ##########
+
+Informações geradas em 03-07-2024 às 14:08.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  52.631579%     15.873016%     17.808219%
+Male/Perished...:  47.368421%     84.126984%     82.191781%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     52.777778%
+Female/Perished.:  00.000000%     00.000000%     47.222222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale     0.426289
+10  Pclass_3     0.090135
+5     Grupo2     0.080508
+12   Cabin_C     0.062440
+13   Cabin_D     0.055406
+2   Noblesse     0.048025
+18   Cabin_U     0.047801
+1       Fare     0.046629
+0        Age     0.042822
+14   Cabin_E     0.038268
+4     Grupo1     0.030298
+7     Grupo4     0.019929
+9   Pclass_2     0.011450
+
+Features sem importância:['Grupo3' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.159966
+Score de validação cruzada: 0.823935
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1416 ##########
+
+Informações geradas em 03-07-2024 às 14:16.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  08.771930%     03.174603%     08.904110%
+Male/Perished...:  91.228070%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     19.444444%
+Female/Perished.:  00.000000%     00.000000%     80.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr     0.611954
+7         Grupo4     0.070612
+10      Pclass_3     0.039506
+3         isMale     0.035224
+27    Title_Miss     0.030275
+14       Cabin_E     0.028251
+4         Grupo1     0.028081
+12       Cabin_C     0.027677
+1           Fare     0.025574
+18       Cabin_U     0.020508
+6         Grupo3     0.018715
+0            Age     0.018189
+31     Title_Mrs     0.016028
+5         Grupo2     0.015589
+9       Pclass_2     0.009198
+26  Title_Master     0.004619
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.842875
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1418 ##########
+
+Informações geradas em 03-07-2024 às 14:18.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  08.771930%     03.174603%     08.904110%
+Male/Perished...:  91.228070%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     19.444444%
+Female/Perished.:  00.000000%     00.000000%     80.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr     0.611954
+7         Grupo4     0.070612
+10      Pclass_3     0.039506
+3         isMale     0.035224
+27    Title_Miss     0.030275
+14       Cabin_E     0.028251
+4         Grupo1     0.028081
+12       Cabin_C     0.027677
+1           Fare     0.025574
+18       Cabin_U     0.020508
+6         Grupo3     0.018715
+0            Age     0.018189
+31     Title_Mrs     0.016028
+5         Grupo2     0.015589
+9       Pclass_2     0.009198
+26  Title_Master     0.004619
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.842875
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1421 ##########
+
+Informações geradas em 03-07-2024 às 14:21.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  50.877193%     09.523810%     08.219178%
+Male/Perished...:  49.122807%     90.476190%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     47.222222%
+Female/Perished.:  00.000000%     00.000000%     52.777778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr     0.320316
+2       Noblesse     0.287474
+7         Grupo4     0.137210
+3         isMale     0.051196
+10      Pclass_3     0.030873
+14       Cabin_E     0.023727
+12       Cabin_C     0.022571
+27    Title_Miss     0.020982
+18       Cabin_U     0.020597
+1           Fare     0.018773
+4         Grupo1     0.015900
+5         Grupo2     0.015260
+0            Age     0.014730
+26  Title_Master     0.007393
+31     Title_Mrs     0.006943
+9       Pclass_2     0.004927
+11       Cabin_B     0.001127
+
+Features sem importância:['Grupo3' 'Grupo5' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.236333
+Score de validação cruzada: 0.848535
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1424 ##########
+
+Informações geradas em 03-07-2024 às 14:25.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  08.771930%     03.174603%     08.904110%
+Male/Perished...:  91.228070%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     19.444444%
+Female/Perished.:  00.000000%     00.000000%     80.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr     0.611954
+7         Grupo4     0.070612
+10      Pclass_3     0.039506
+3         isMale     0.035224
+27    Title_Miss     0.030275
+14       Cabin_E     0.028251
+4         Grupo1     0.028081
+12       Cabin_C     0.027677
+1           Fare     0.025574
+18       Cabin_U     0.020508
+6         Grupo3     0.018715
+0            Age     0.018189
+31     Title_Mrs     0.016028
+5         Grupo2     0.015589
+9       Pclass_2     0.009198
+26  Title_Master     0.004619
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.842875
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1427 ##########
+
+Informações geradas em 03-07-2024 às 14:27.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  08.771930%     03.174603%     08.904110%
+Male/Perished...:  91.228070%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     19.444444%
+Female/Perished.:  00.000000%     00.000000%     80.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr     0.611954
+7         Grupo4     0.070612
+10      Pclass_3     0.039506
+3         isMale     0.035224
+27    Title_Miss     0.030275
+14       Cabin_E     0.028251
+4         Grupo1     0.028081
+12       Cabin_C     0.027677
+1           Fare     0.025574
+18       Cabin_U     0.020508
+6         Grupo3     0.018715
+0            Age     0.018189
+31     Title_Mrs     0.016028
+5         Grupo2     0.015589
+9       Pclass_2     0.009198
+26  Title_Master     0.004619
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_D' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.842875
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-1532 ##########
+
+Informações geradas em 03-07-2024 às 15:33.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  52.631579%     03.174603%     08.904110%
+Male/Perished...:  47.368421%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+      variável  importância
+30    Title_Mr     0.623609
+10    Pclass_3     0.049060
+12     Cabin_C     0.040242
+3       isMale     0.036162
+7       Grupo4     0.030938
+1         Fare     0.030036
+4       Grupo1     0.028758
+27  Title_Miss     0.025013
+14     Cabin_E     0.020311
+6       Grupo3     0.020109
+5       Grupo2     0.018904
+0          Age     0.018626
+13     Cabin_D     0.015265
+18     Cabin_U     0.014710
+9     Pclass_2     0.014228
+31   Title_Mrs     0.014029
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.236333
+Score de validação cruzada: 0.844762
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 2143, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.012, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-2007 ##########
+
+Informações geradas em 03-07-2024 às 20:07.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  47.368421%     14.285714%     07.534247%
+Male/Perished...:  52.631579%     85.714286%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     55.555556%
+Female/Perished.:  00.000000%     00.000000%     44.444444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale     0.507120
+18   Cabin_U     0.134214
+10  Pclass_3     0.104920
+5     Grupo2     0.060814
+0        Age     0.034104
+1       Fare     0.031850
+4     Grupo1     0.026086
+13   Cabin_D     0.023567
+14   Cabin_E     0.022803
+12   Cabin_C     0.016462
+7     Grupo4     0.014173
+6     Grupo3     0.013223
+9   Pclass_2     0.010664
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.272154
+Score de validação cruzada: 0.824518
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 2143, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.012, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-2013 ##########
+
+Informações geradas em 03-07-2024 às 20:13.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  57.894737%     12.698413%     06.164384%
+Male/Perished...:  42.105263%     87.301587%     93.835616%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     55.555556%
+Female/Perished.:  00.000000%     00.000000%     44.444444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale     0.505435
+13   Cabin_U     0.147274
+5   Pclass_3     0.120232
+9    Cabin_E     0.050008
+1       Fare     0.040624
+0        Age     0.040534
+4   Pclass_2     0.039220
+8    Cabin_D     0.037976
+7    Cabin_C     0.018697
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.272154
+Score de validação cruzada: 0.831171
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 2143, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.012, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-2016 ##########
+
+Informações geradas em 03-07-2024 às 20:17.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  47.368421%     14.285714%     07.534247%
+Male/Perished...:  52.631579%     85.714286%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     55.555556%
+Female/Perished.:  00.000000%     00.000000%     44.444444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale     0.507120
+18   Cabin_U     0.134214
+10  Pclass_3     0.104920
+5     Grupo2     0.060814
+0        Age     0.034104
+1       Fare     0.031850
+4     Grupo1     0.026086
+13   Cabin_D     0.023567
+14   Cabin_E     0.022803
+12   Cabin_C     0.016462
+7     Grupo4     0.014173
+6     Grupo3     0.013223
+9   Pclass_2     0.010664
+
+Features sem importância:['Noblesse' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.272154
+Score de validação cruzada: 0.824518
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 2143, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.012, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-2022 ##########
+
+Informações geradas em 03-07-2024 às 20:22.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  42.105263%     11.111111%     10.958904%
+Male/Perished...:  57.894737%     88.888889%     89.041096%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+      variável  importância
+30    Title_Mr     0.316908
+33   Title_Rev     0.241107
+2     Noblesse     0.090659
+7       Grupo4     0.063403
+3       isMale     0.059105
+10    Pclass_3     0.042986
+18     Cabin_U     0.025575
+13     Cabin_D     0.025155
+5       Grupo2     0.020598
+1         Fare     0.020426
+27  Title_Miss     0.015740
+14     Cabin_E     0.015425
+0          Age     0.014944
+12     Cabin_C     0.013640
+4       Grupo1     0.012928
+31   Title_Mrs     0.009921
+9     Pclass_2     0.006578
+6       Grupo3     0.004903
+
+Features sem importância:['Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.272154
+Score de validação cruzada: 0.839449
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 6, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 2143, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.012, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240703-2036 ##########
+
+Informações geradas em 03-07-2024 às 20:36.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  52.631579%     09.523810%     11.643836%
+Male/Perished...:  47.368421%     90.476190%     88.356164%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     47.222222%
+Female/Perished.:  00.000000%     00.000000%     52.777778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+33     Title_Rev     0.279948
+30      Title_Mr     0.259917
+7         Grupo4     0.130247
+2       Noblesse     0.112301
+3         isMale     0.031177
+13       Cabin_D     0.030813
+10      Pclass_3     0.027664
+14       Cabin_E     0.021507
+18       Cabin_U     0.017851
+27    Title_Miss     0.015793
+5         Grupo2     0.015529
+1           Fare     0.012801
+12       Cabin_C     0.012141
+0            Age     0.010155
+4         Grupo1     0.008312
+31     Title_Mrs     0.006015
+9       Pclass_2     0.005039
+26  Title_Master     0.002791
+
+Features sem importância:['Grupo3' 'Grupo5' 'Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col'
+ 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady'
+ 'Title_Major' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.244160
+Score de validação cruzada: 0.837796
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240704-0739 ##########
+
+Informações geradas em 04-07-2024 às 07:40.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  45.614035%     03.174603%     08.904110%
+Male/Perished...:  54.385965%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     33.333333%
+Female/Perished.:  00.000000%     00.000000%     66.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+28     Title_Rev     0.364092
+25      Title_Mr     0.268085
+2       Noblesse     0.137938
+3         isMale     0.038241
+5       Pclass_3     0.036877
+8        Cabin_D     0.035282
+13       Cabin_U     0.023621
+22    Title_Miss     0.018671
+9        Cabin_E     0.018359
+1           Fare     0.017203
+0            Age     0.012563
+7        Cabin_C     0.009874
+4       Pclass_2     0.008983
+26     Title_Mrs     0.007392
+21  Title_Master     0.002820
+
+Features sem importância:['Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.160178
+Score de validação cruzada: 0.831198
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO XGBoostClassifier 20240704-0847 ##########
+
+Informações geradas em 04-07-2024 às 08:48.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  47.368421%     07.936508%     08.219178%
+Male/Perished...:  52.631579%     92.063492%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     37.500000%
+Female/Perished.:  00.000000%     00.000000%     62.500000%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+31     Title_Rev     0.361344
+28      Title_Mr     0.255119
+2       Noblesse     0.136897
+8       Pclass_3     0.035744
+11       Cabin_D     0.033610
+5         Grupo2     0.021590
+16       Cabin_U     0.021161
+25    Title_Miss     0.019465
+12       Cabin_E     0.019154
+4         Grupo1     0.018321
+3         isMale     0.017787
+1           Fare     0.016682
+10       Cabin_C     0.012376
+0            Age     0.011847
+7       Pclass_2     0.006701
+29     Title_Mrs     0.005598
+24  Title_Master     0.003997
+6         Grupo3     0.002607
+
+Features sem importância:['Cabin_B' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.244160
+Score de validação cruzada: 0.836143
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'objective': 'binary:logistic', 'base_score': None, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'cuda', 'early_stopping_rounds': 500, 'enable_categorical': False, 'eval_metric': 'error', 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 14, 'max_leaves': 135, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1366, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': 'approx', 'validate_parameters': None, 'verbosity': None, 'nthread': 12, 'eta': 0.037, 'seed': 1}
+
+=======================================================================
+
+

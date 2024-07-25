@@ -1,0 +1,28 @@
+########## INÍCIO DE REGISTRO OPTUNA - MODELO XGBoostClassifier ##########
+
+Informações armazenadas em 01-07-2024 às 08:23.
+
+---===+++ Os melhores parâmetros encontrados +++===---
+
+{'three_method': 'approx', 'n_estimators': 1366, 'eta': 0.037000000000000005, 'max_depth': 14, 'max_leaves': 135, 'objective': 'binary:logistic'}
+
+Obtidos na iteração 514
+Valor de score cross-validation 0.8282828282828284
+
+########## FINAL DE REGISTRO OPTUNA - MODELO XGBoostClassifier ##########
+
+
+########## INÍCIO DE REGISTRO OPTUNA - MODELO XGBoostClassifier ##########
+
+Informações armazenadas em 03-07-2024 às 15:30.
+
+---===+++ Os melhores parâmetros encontrados +++===---
+
+{'three_method': 'approx', 'n_estimators': 2143, 'eta': 0.012, 'max_depth': 6, 'max_leaves': 135, 'objective': 'binary:logistic'}
+
+Obtidos na iteração 189
+Valor de score cross-validation 0.8447619047619048
+
+########## FINAL DE REGISTRO OPTUNA - MODELO XGBoostClassifier ##########
+
+

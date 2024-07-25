@@ -1,0 +1,1253 @@
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240701-1312 ##########
+
+Informações geradas em 01-07-2024 às 13:26.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  14.035088%     03.174603%     08.219178%
+Male/Perished...:  85.964912%     96.825397%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     54.166667%
+Female/Perished.:  00.000000%     00.000000%     45.833333%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         4120
+1          Fare         3924
+5   FamilyTotal          712
+28    Title_Mrs          350
+7      Pclass_3          330
+4        isMale          328
+15      Cabin_U          320
+9       Cabin_C          202
+3       Grouped          158
+27     Title_Mr          122
+24   Title_Miss            4
+6      Pclass_2            1
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme'
+ 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.131799
+Score de validação cruzada: 0.834671
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.01, 'max_depth': 6, 'min_child_samples': 30, 'min_child_weight': 0.001, 'min_split_gain': 0.01, 'n_estimators': 1000, 'n_jobs': 12, 'num_leaves': 40, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.9, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240701-1421 ##########
+
+Informações geradas em 01-07-2024 às 14:23.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  12.280702%     03.174603%     06.849315%
+Male/Perished...:  87.719298%     96.825397%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     58.333333%
+Female/Perished.:  00.000000%     00.000000%     41.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+1          Fare         1370
+0           Age         1245
+5   FamilyTotal          142
+28    Title_Mrs          142
+4        isMale           85
+7      Pclass_3           84
+15      Cabin_U           67
+9       Cabin_C           52
+27     Title_Mr           50
+3       Grouped           32
+24   Title_Miss            2
+6      Pclass_2            1
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'
+ 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr' 'Title_Jonkheer'
+ 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle' 'Title_Mme'
+ 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.192725
+Score de validação cruzada: 0.841058
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1120 ##########
+
+Informações geradas em 03-07-2024 às 11:22.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     06.349206%     08.904110%
+Male/Perished...:  77.192982%     93.650794%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+1          Fare         1242
+0           Age         1223
+5   FamilyTotal          218
+28    Title_Mrs          175
+4        isMale           90
+7      Pclass_3           67
+27     Title_Mr           59
+15      Cabin_U           47
+3       Grouped           43
+6      Pclass_2           40
+24   Title_Miss            7
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr'
+ 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle'
+ 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.800578
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1210 ##########
+
+Informações geradas em 03-07-2024 às 12:11.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     06.349206%     08.904110%
+Male/Perished...:  77.192982%     93.650794%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+1          Fare         1242
+0           Age         1223
+5   FamilyTotal          218
+28    Title_Mrs          175
+4        isMale           90
+7      Pclass_3           67
+27     Title_Mr           59
+15      Cabin_U           47
+3       Grouped           43
+6      Pclass_2           40
+24   Title_Miss            7
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr'
+ 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle'
+ 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.800578
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1215 ##########
+
+Informações geradas em 03-07-2024 às 12:16.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     06.349206%     08.904110%
+Male/Perished...:  77.192982%     93.650794%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+1          Fare         1242
+0           Age         1223
+5   FamilyTotal          218
+28    Title_Mrs          175
+4        isMale           90
+7      Pclass_3           67
+27     Title_Mr           59
+15      Cabin_U           47
+3       Grouped           43
+6      Pclass_2           40
+24   Title_Miss            7
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr'
+ 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle'
+ 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.800578
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1219 ##########
+
+Informações geradas em 03-07-2024 às 12:20.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     06.349206%     08.904110%
+Male/Perished...:  77.192982%     93.650794%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+1          Fare         1242
+0           Age         1223
+5   FamilyTotal          218
+28    Title_Mrs          175
+4        isMale           90
+7      Pclass_3           67
+27     Title_Mr           59
+15      Cabin_U           47
+3       Grouped           43
+6      Pclass_2           40
+24   Title_Miss            7
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr'
+ 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Mlle'
+ 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.800578
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1226 ##########
+
+Informações geradas em 03-07-2024 às 12:27.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     09.523810%     06.849315%
+Male/Perished...:  75.438596%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         1442
+1          Fare         1362
+5   FamilyTotal          192
+4        isMale          175
+7      Pclass_3           69
+15      Cabin_U           40
+3       Grouped           37
+6      Pclass_2           33
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.802463
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1231 ##########
+
+Informações geradas em 03-07-2024 às 12:32.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     09.523810%     06.849315%
+Male/Perished...:  75.438596%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         1442
+1          Fare         1362
+5   FamilyTotal          192
+4        isMale          175
+7      Pclass_3           69
+15      Cabin_U           40
+3       Grouped           37
+6      Pclass_2           33
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.802463
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1234 ##########
+
+Informações geradas em 03-07-2024 às 12:35.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     09.523810%     06.849315%
+Male/Perished...:  75.438596%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         1442
+1          Fare         1362
+5   FamilyTotal          192
+4        isMale          175
+7      Pclass_3           69
+15      Cabin_U           40
+3       Grouped           37
+6      Pclass_2           33
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.802463
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1237 ##########
+
+Informações geradas em 03-07-2024 às 12:38.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     09.523810%     06.849315%
+Male/Perished...:  75.438596%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         1442
+1          Fare         1362
+5   FamilyTotal          192
+4        isMale          175
+7      Pclass_3           69
+15      Cabin_U           40
+3       Grouped           37
+6      Pclass_2           33
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.370802
+Score de validação cruzada: 0.802463
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1349 ##########
+
+Informações geradas em 03-07-2024 às 13:50.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  22.807018%     06.349206%     06.849315%
+Male/Perished...:  77.192982%     93.650794%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     58.333333%
+Female/Perished.:  00.000000%     00.000000%     41.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+0        Age         1534
+1       Fare         1489
+4     isMale          216
+5     Grupo1          120
+11  Pclass_3           80
+6     Grupo2           54
+19   Cabin_U           46
+3    Grouped           38
+10  Pclass_2            3
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.802463
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1353 ##########
+
+Informações geradas em 03-07-2024 às 13:54.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     03.174603%     08.219178%
+Male/Perished...:  78.947368%     96.825397%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+0           Age         1273
+1          Fare         1272
+5   FamilyTotal          190
+33    Title_Mrs          163
+4        isMale           99
+12     Pclass_3           76
+20      Cabin_U           55
+3       Grouped           46
+32     Title_Mr           35
+7        Grupo2           25
+11     Pclass_2           21
+29   Title_Miss           19
+6        Grupo1            8
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev'
+ 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.429789
+Score de validação cruzada: 0.798743
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1408 ##########
+
+Informações geradas em 03-07-2024 às 14:09.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     11.111111%     11.643836%
+Male/Perished...:  75.438596%     88.888889%     88.356164%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     55.555556%
+Female/Perished.:  00.000000%     00.000000%     44.444444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+1       Fare         1563
+0        Age         1117
+3     isMale          174
+4     Grupo1          115
+5     Grupo2           98
+10  Pclass_3           57
+18   Cabin_U           50
+9   Pclass_2            6
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.121783
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1416 ##########
+
+Informações geradas em 03-07-2024 às 14:17.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     09.523810%     08.904110%
+Male/Perished...:  71.929825%     90.476190%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1438
+0         Age         1085
+4      Grupo1          129
+31  Title_Mrs          124
+3      isMale          108
+5      Grupo2           75
+10   Pclass_3           70
+18    Cabin_U           53
+30   Title_Mr           20
+9    Pclass_2            7
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1418 ##########
+
+Informações geradas em 03-07-2024 às 14:19.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     09.523810%     08.904110%
+Male/Perished...:  71.929825%     90.476190%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1438
+0         Age         1085
+4      Grupo1          129
+31  Title_Mrs          124
+3      isMale          108
+5      Grupo2           75
+10   Pclass_3           70
+18    Cabin_U           53
+30   Title_Mr           20
+9    Pclass_2            7
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1421 ##########
+
+Informações geradas em 03-07-2024 às 14:22.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     09.523810%     08.904110%
+Male/Perished...:  71.929825%     90.476190%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1438
+0         Age         1085
+4      Grupo1          129
+31  Title_Mrs          124
+3      isMale          108
+5      Grupo2           75
+10   Pclass_3           70
+18    Cabin_U           53
+30   Title_Mr           20
+9    Pclass_2            7
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1425 ##########
+
+Informações geradas em 03-07-2024 às 14:26.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     09.523810%     08.904110%
+Male/Perished...:  71.929825%     90.476190%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1438
+0         Age         1085
+4      Grupo1          129
+31  Title_Mrs          124
+3      isMale          108
+5      Grupo2           75
+10   Pclass_3           70
+18    Cabin_U           53
+30   Title_Mr           20
+9    Pclass_2            7
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-1428 ##########
+
+Informações geradas em 03-07-2024 às 14:28.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     09.523810%     08.904110%
+Male/Perished...:  71.929825%     90.476190%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1438
+0         Age         1085
+4      Grupo1          129
+31  Title_Mrs          124
+3      isMale          108
+5      Grupo2           75
+10   Pclass_3           70
+18    Cabin_U           53
+30   Title_Mr           20
+9    Pclass_2            7
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.840934
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-2006 ##########
+
+Informações geradas em 03-07-2024 às 20:07.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     09.523810%     06.849315%
+Male/Perished...:  78.947368%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     58.333333%
+Female/Perished.:  00.000000%     00.000000%     41.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+0        Age         1530
+1       Fare         1460
+3     isMale          187
+5     Grupo2           97
+10  Pclass_3           78
+4     Grupo1           68
+18   Cabin_U           58
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Pclass_2' 'Cabin_B' 'Cabin_C'
+ 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.822920
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-2014 ##########
+
+Informações geradas em 03-07-2024 às 20:14.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     06.349206%     09.589041%
+Male/Perished...:  78.947368%     93.650794%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+1       Fare         1657
+0        Age         1435
+3     isMale          167
+5   Pclass_3          109
+13   Cabin_U           55
+
+Features sem importância:['Noblesse' 'Pclass_2' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F'
+ 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.188172
+Score de validação cruzada: 0.827865
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-2017 ##########
+
+Informações geradas em 03-07-2024 às 20:18.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  21.052632%     09.523810%     06.849315%
+Male/Perished...:  78.947368%     90.476190%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     58.333333%
+Female/Perished.:  00.000000%     00.000000%     41.666667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+0        Age         1530
+1       Fare         1460
+3     isMale          187
+5     Grupo2           97
+10  Pclass_3           78
+4     Grupo1           68
+18   Cabin_U           58
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Pclass_2' 'Cabin_B' 'Cabin_C'
+ 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.822920
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-2022 ##########
+
+Informações geradas em 03-07-2024 às 20:23.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     06.349206%     07.534247%
+Male/Perished...:  75.438596%     93.650794%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1400
+0         Age         1316
+31  Title_Mrs          151
+10   Pclass_3           97
+3      isMale           89
+4      Grupo1           78
+5      Grupo2           71
+18    Cabin_U           67
+30   Title_Mr           42
+9    Pclass_2            2
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.836143
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240703-2036 ##########
+
+Informações geradas em 03-07-2024 às 20:37.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     06.349206%     07.534247%
+Male/Perished...:  75.438596%     93.650794%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1400
+0         Age         1316
+31  Title_Mrs          151
+10   Pclass_3           97
+3      isMale           89
+4      Grupo1           78
+5      Grupo2           71
+18    Cabin_U           67
+30   Title_Mr           42
+9    Pclass_2            2
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Cabin_B' 'Cabin_C' 'Cabin_D'
+ 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Rev' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.836143
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240704-0740 ##########
+
+Informações geradas em 04-07-2024 às 07:41.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     06.349206%     08.904110%
+Male/Perished...:  71.929825%     93.650794%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1497
+0         Age         1301
+26  Title_Mrs          135
+5    Pclass_3          104
+3      isMale          103
+13    Cabin_U           62
+25   Title_Mr           40
+4    Pclass_2            3
+
+Features sem importância:['Noblesse' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G'
+ 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona' 'Title_Dr'
+ 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master' 'Title_Miss'
+ 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.188172
+Score de validação cruzada: 0.829532
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO LightGBM Classifier 20240704-0848 ##########
+
+Informações geradas em 04-07-2024 às 08:49.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  19.298246%     07.936508%     07.534247%
+Male/Perished...:  80.701754%     92.063492%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     62.500000%
+Female/Perished.:  00.000000%     00.000000%     37.500000%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+     variável  importância
+1        Fare         1350
+0         Age         1286
+29  Title_Mrs          143
+3      isMale          106
+4      Grupo1           82
+8    Pclass_3           74
+16    Cabin_U           61
+28   Title_Mr           45
+7    Pclass_2            3
+
+Features sem importância:['Noblesse' 'Grupo2' 'Grupo3' 'Cabin_B' 'Cabin_C' 'Cabin_D' 'Cabin_E'
+ 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don' 'Title_Dona'
+ 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major' 'Title_Master'
+ 'Title_Miss' 'Title_Mlle' 'Title_Mme' 'Title_Ms' 'Title_Rev' 'Title_Sir'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.160178
+Score de validação cruzada: 0.832837
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'boosting_type': 'gbdt', 'class_weight': None, 'colsample_bytree': 1.0, 'importance_type': 'split', 'learning_rate': 0.044, 'max_depth': 3, 'min_child_samples': 47, 'min_child_weight': 0.022, 'min_split_gain': 0.02, 'n_estimators': 800, 'n_jobs': 12, 'num_leaves': 16, 'objective': 'binary', 'random_state': 1, 'reg_alpha': 0.0, 'reg_lambda': 0.0, 'subsample': 0.6, 'subsample_for_bin': 200000, 'subsample_freq': 0, 'metric': 'binary_logloss'}
+
+=======================================================================
+
+

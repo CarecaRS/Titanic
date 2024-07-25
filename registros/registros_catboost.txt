@@ -1,0 +1,1487 @@
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240701-0934 ##########
+
+Informações geradas em 01-07-2024 às 09:52.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  17.543860%     03.174603%     08.219178%
+Male/Perished...:  82.456140%     96.825397%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     61.111111%
+Female/Perished.:  00.000000%     00.000000%     38.888889%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+27     Title_Mr    51.992874
+5   FamilyTotal     9.657393
+7      Pclass_3     9.394992
+1          Fare     8.382796
+0           Age     6.355523
+11      Cabin_E     3.589216
+30    Title_Rev     2.452517
+2      Noblesse     2.120681
+6      Pclass_2     1.406808
+15      Cabin_U     1.321565
+3       Grouped     1.067979
+10      Cabin_D     0.919749
+4        isMale     0.626856
+8       Cabin_B     0.582974
+24   Title_Miss     0.128076
+
+Features sem importância:['Cabin_C' 'Cabin_F' 'Cabin_G' 'Cabin_T' 'Title_Col' 'Title_Don'
+ 'Title_Dona' 'Title_Dr' 'Title_Jonkheer' 'Title_Lady' 'Title_Major'
+ 'Title_Master' 'Title_Mlle' 'Title_Mme' 'Title_Mrs' 'Title_Ms'
+ 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.177494
+Score de validação cruzada: 0.839631
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'gpu_ram_part': 0.2, 'eval_metric': 'Accuracy', 'iterations': 1500, 'leaf_estimation_method': 'Newton', 'observations_to_bootstrap': 'TestOnly', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'devices': '-1', 'eval_fraction': 0, 'pinned_memory_bytes': '104857600', 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'gpu_cat_features_storage': 'GpuRam', 'fold_size_loss_normalization': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'use_best_model': True, 'meta_l2_frequency': 0, 'od_wait': 500, 'random_seed': 1, 'depth': 12, 'border_count': 128, 'min_fold_size': 100, 'target_border': 0.6499999761581421, 'data_partition': 'DocParallel', 'bagging_temperature': 0, 'classes_count': 0, 'auto_class_weights': 'None', 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'min_data_in_leaf': 1, 'add_ridge_penalty_to_loss_function': False, 'loss_function': 'Logloss', 'learning_rate': 0.10000000149011612, 'meta_l2_exponent': 1, 'score_function': 'L2', 'task_type': 'GPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'Bayesian', 'max_leaves': 30}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240701-1044 ##########
+
+Informações geradas em 01-07-2024 às 10:46.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  05.263158%     03.174603%     06.849315%
+Male/Perished...:  94.736842%     96.825397%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+4         isMale    24.479819
+1           Fare    15.978056
+27      Title_Mr    14.779796
+0            Age    11.084823
+5    FamilyTotal     7.847049
+7       Pclass_3     6.394134
+28     Title_Mrs     4.745014
+24    Title_Miss     4.489608
+15       Cabin_U     3.613108
+11       Cabin_E     1.794022
+3        Grouped     1.420133
+6       Pclass_2     1.005186
+23  Title_Master     0.822217
+10       Cabin_D     0.593930
+8        Cabin_B     0.408755
+9        Cabin_C     0.314655
+30     Title_Rev     0.116656
+19      Title_Dr     0.037384
+22   Title_Major     0.022892
+2       Noblesse     0.015625
+13       Cabin_G     0.014636
+26     Title_Mme     0.011600
+12       Cabin_F     0.007377
+21    Title_Lady     0.002680
+17     Title_Don     0.000845
+
+Features sem importância:['Cabin_T' 'Title_Col' 'Title_Dona' 'Title_Jonkheer' 'Title_Mlle'
+ 'Title_Ms' 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.131799
+Score de validação cruzada: 0.855658
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'gpu_ram_part': 0.2, 'eval_metric': 'AUC', 'iterations': 1400, 'leaf_estimation_method': 'Newton', 'observations_to_bootstrap': 'TestOnly', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'devices': '-1', 'eval_fraction': 0, 'pinned_memory_bytes': '104857600', 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'gpu_cat_features_storage': 'GpuRam', 'fold_size_loss_normalization': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'use_best_model': True, 'meta_l2_frequency': 0, 'od_wait': 500, 'random_seed': 1, 'depth': 13, 'border_count': 128, 'min_fold_size': 100, 'target_border': 0.699999988079071, 'data_partition': 'DocParallel', 'bagging_temperature': 9, 'classes_count': 0, 'auto_class_weights': 'None', 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'min_data_in_leaf': 25, 'add_ridge_penalty_to_loss_function': False, 'loss_function': 'Logloss', 'learning_rate': 0.010999999940395355, 'meta_l2_exponent': 1, 'score_function': 'L2', 'task_type': 'GPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'Bayesian', 'max_leaves': 40}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1209 ##########
+
+Informações geradas em 03-07-2024 às 12:10.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  29.824561%     07.936508%     08.904110%
+Male/Perished...:  70.175439%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     68.055556%
+Female/Perished.:  00.000000%     00.000000%     31.944444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr    26.101873
+1           Fare    16.233796
+0            Age    16.045899
+4         isMale    13.590047
+5    FamilyTotal     8.521094
+7       Pclass_3     5.947666
+11       Cabin_E     3.193157
+15       Cabin_U     2.099438
+6       Pclass_2     1.899111
+3        Grouped     1.843763
+23  Title_Master     1.197807
+30     Title_Rev     0.955803
+28     Title_Mrs     0.491734
+10       Cabin_D     0.482537
+24    Title_Miss     0.464155
+9        Cabin_C     0.207110
+2       Noblesse     0.149517
+12       Cabin_F     0.111950
+8        Cabin_B     0.101768
+13       Cabin_G     0.094286
+19      Title_Dr     0.087520
+17     Title_Don     0.084607
+31     Title_Sir     0.039217
+16     Title_Col     0.019570
+22   Title_Major     0.014135
+14       Cabin_T     0.010674
+21    Title_Lady     0.008821
+29      Title_Ms     0.002402
+25    Title_Mlle     0.000543
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mme' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.410127
+Score de validação cruzada: 0.815426
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1215 ##########
+
+Informações geradas em 03-07-2024 às 12:15.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  29.824561%     07.936508%     08.904110%
+Male/Perished...:  70.175439%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     69.444444%
+Female/Perished.:  00.000000%     00.000000%     30.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr    33.128060
+1           Fare    15.275770
+0            Age    14.619476
+5    FamilyTotal     8.819972
+4         isMale     7.083125
+7       Pclass_3     6.315906
+11       Cabin_E     3.017588
+15       Cabin_U     2.496035
+2       Noblesse     1.748549
+6       Pclass_2     1.512536
+3        Grouped     1.432524
+23  Title_Master     1.159025
+30     Title_Rev     0.753068
+24    Title_Miss     0.691017
+28     Title_Mrs     0.601341
+10       Cabin_D     0.418709
+9        Cabin_C     0.166095
+13       Cabin_G     0.161202
+22   Title_Major     0.159460
+8        Cabin_B     0.145617
+19      Title_Dr     0.084403
+12       Cabin_F     0.069928
+17     Title_Don     0.050943
+31     Title_Sir     0.035478
+16     Title_Col     0.033611
+14       Cabin_T     0.010780
+29      Title_Ms     0.003327
+21    Title_Lady     0.003295
+25    Title_Mlle     0.003162
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mme' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.390464
+Score de validação cruzada: 0.815409
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1219 ##########
+
+Informações geradas em 03-07-2024 às 12:19.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  28.070175%     07.936508%     08.904110%
+Male/Perished...:  71.929825%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     70.833333%
+Female/Perished.:  00.000000%     00.000000%     29.166667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+27      Title_Mr    28.367046
+4         isMale    14.147804
+1           Fare    14.080484
+0            Age    12.017292
+5    FamilyTotal     8.199211
+7       Pclass_3     7.783952
+11       Cabin_E     3.412003
+15       Cabin_U     2.601049
+3        Grouped     1.969132
+2       Noblesse     1.648506
+23  Title_Master     1.269436
+6       Pclass_2     1.263378
+24    Title_Miss     0.748076
+30     Title_Rev     0.668567
+28     Title_Mrs     0.487035
+10       Cabin_D     0.428880
+9        Cabin_C     0.230218
+13       Cabin_G     0.188309
+12       Cabin_F     0.101899
+8        Cabin_B     0.095794
+17     Title_Don     0.087515
+31     Title_Sir     0.055620
+22   Title_Major     0.044975
+16     Title_Col     0.042401
+19      Title_Dr     0.037235
+14       Cabin_T     0.011205
+25    Title_Mlle     0.006084
+29      Title_Ms     0.005113
+21    Title_Lady     0.001780
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mme' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.311814
+Score de validação cruzada: 0.809837
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1226 ##########
+
+Informações geradas em 03-07-2024 às 12:26.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  33.333333%     07.936508%     08.904110%
+Male/Perished...:  66.666667%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     70.833333%
+Female/Perished.:  00.000000%     00.000000%     29.166667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale    38.139170
+0           Age    20.057021
+1          Fare    15.246657
+7      Pclass_3     9.159146
+5   FamilyTotal     6.762631
+15      Cabin_U     3.219895
+11      Cabin_E     2.764231
+3       Grouped     2.025959
+6      Pclass_2     0.991901
+2      Noblesse     0.808888
+10      Cabin_D     0.376364
+12      Cabin_F     0.156855
+9       Cabin_C     0.126245
+13      Cabin_G     0.116405
+8       Cabin_B     0.039649
+14      Cabin_T     0.008983
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.815409
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1231 ##########
+
+Informações geradas em 03-07-2024 às 12:31.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  24.561404%     07.936508%     08.904110%
+Male/Perished...:  75.438596%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     69.444444%
+Female/Perished.:  00.000000%     00.000000%     30.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale    38.195320
+0           Age    19.409832
+1          Fare    15.584207
+7      Pclass_3     9.480535
+5   FamilyTotal     7.115041
+15      Cabin_U     3.206451
+11      Cabin_E     2.819196
+3       Grouped     1.975350
+6      Pclass_2     0.829218
+2      Noblesse     0.448202
+10      Cabin_D     0.298463
+12      Cabin_F     0.242547
+9       Cabin_C     0.157670
+13      Cabin_G     0.132904
+8       Cabin_B     0.083028
+14      Cabin_T     0.022036
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.272489
+Score de validação cruzada: 0.809888
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1234 ##########
+
+Informações geradas em 03-07-2024 às 12:34.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  33.333333%     07.936508%     07.534247%
+Male/Perished...:  66.666667%     92.063492%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     68.055556%
+Female/Perished.:  00.000000%     00.000000%     31.944444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale    34.066864
+0           Age    23.193305
+1          Fare    18.444283
+7      Pclass_3     8.005702
+5   FamilyTotal     7.012017
+15      Cabin_U     3.027904
+11      Cabin_E     2.330418
+3       Grouped     1.587611
+6      Pclass_2     1.066771
+10      Cabin_D     0.336876
+2      Noblesse     0.251669
+9       Cabin_C     0.196990
+13      Cabin_G     0.188803
+12      Cabin_F     0.166837
+8       Cabin_B     0.099409
+14      Cabin_T     0.024542
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.331477
+Score de validação cruzada: 0.809922
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1237 ##########
+
+Informações geradas em 03-07-2024 às 12:37.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  29.824561%     07.936508%     08.904110%
+Male/Perished...:  70.175439%     92.063492%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     70.833333%
+Female/Perished.:  00.000000%     00.000000%     29.166667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+       variável  importância
+4        isMale    38.126967
+0           Age    19.642193
+1          Fare    15.623811
+7      Pclass_3     9.025330
+5   FamilyTotal     6.844768
+15      Cabin_U     3.399238
+11      Cabin_E     2.781083
+3       Grouped     2.335276
+6      Pclass_2     1.390160
+10      Cabin_D     0.298913
+9       Cabin_C     0.164537
+13      Cabin_G     0.155562
+12      Cabin_F     0.117937
+8       Cabin_B     0.075781
+14      Cabin_T     0.018442
+
+Features sem importância:['Noblesse'].
+
+Coeficiente de Determinação R2: 0.292152
+Score de validação cruzada: 0.817210
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1349 ##########
+
+Informações geradas em 03-07-2024 às 13:49.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  31.578947%     07.936508%     06.849315%
+Male/Perished...:  68.421053%     92.063492%     93.150685%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+4     isMale    32.070683
+0        Age    24.470463
+1       Fare    20.602138
+11  Pclass_3     8.527068
+19   Cabin_U     3.243539
+15   Cabin_E     2.659526
+3    Grouped     2.199730
+6     Grupo2     1.711955
+10  Pclass_2     1.154700
+5     Grupo1     0.838913
+7     Grupo3     0.644019
+8     Grupo4     0.604792
+9     Grupo5     0.423413
+14   Cabin_D     0.324927
+16   Cabin_F     0.184407
+13   Cabin_C     0.136987
+17   Cabin_G     0.116272
+12   Cabin_B     0.058465
+18   Cabin_T     0.028002
+
+Features sem importância:['Noblesse'].
+
+Coeficiente de Determinação R2: 0.311814
+Score de validação cruzada: 0.809888
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1353 ##########
+
+Informações geradas em 03-07-2024 às 13:53.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.842105%     04.761905%     08.904110%
+Male/Perished...:  63.157895%     95.238095%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+32      Title_Mr    28.003340
+0            Age    17.784926
+1           Fare    17.609082
+4         isMale     8.252066
+5    FamilyTotal     6.272728
+12      Pclass_3     5.674913
+16       Cabin_E     3.223290
+20       Cabin_U     1.992726
+2       Noblesse     1.926627
+3        Grouped     1.642939
+28  Title_Master     1.202683
+7         Grupo2     1.017526
+29    Title_Miss     0.919549
+11      Pclass_2     0.864864
+35     Title_Rev     0.674061
+6         Grupo1     0.644571
+33     Title_Mrs     0.482035
+8         Grupo3     0.395172
+15       Cabin_D     0.383460
+14       Cabin_C     0.192784
+10        Grupo5     0.175655
+18       Cabin_G     0.150969
+9         Grupo4     0.131581
+13       Cabin_B     0.103274
+36     Title_Sir     0.059440
+17       Cabin_F     0.054979
+21     Title_Col     0.046695
+27   Title_Major     0.033130
+22     Title_Don     0.031360
+19       Cabin_T     0.018088
+24      Title_Dr     0.017464
+30    Title_Mlle     0.008607
+34      Title_Ms     0.006119
+26    Title_Lady     0.003298
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mme' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.351139
+Score de validação cruzada: 0.811723
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1408 ##########
+
+Informações geradas em 03-07-2024 às 14:08.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  40.350877%     03.174603%     06.164384%
+Male/Perished...:  59.649123%     96.825397%     93.835616%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     68.055556%
+Female/Perished.:  00.000000%     00.000000%     31.944444%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale    48.359601
+0        Age    19.002368
+1       Fare    12.362705
+10  Pclass_3     9.656564
+18   Cabin_U     2.576887
+5     Grupo2     2.009399
+14   Cabin_E     1.387140
+4     Grupo1     1.158808
+9   Pclass_2     1.090043
+7     Grupo4     0.693562
+12   Cabin_C     0.595210
+13   Cabin_D     0.521416
+8     Grupo5     0.297168
+2   Noblesse     0.204062
+6     Grupo3     0.047264
+11   Cabin_B     0.018884
+15   Cabin_F     0.013660
+16   Cabin_G     0.003437
+17   Cabin_T     0.001824
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.159966
+Score de validação cruzada: 0.816208
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1416 ##########
+
+Informações geradas em 03-07-2024 às 14:16.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  31.578947%     03.174603%     08.904110%
+Male/Perished...:  68.421053%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr    27.290420
+3         isMale    24.294006
+1           Fare    15.269115
+0            Age    10.608676
+10      Pclass_3     7.535980
+18       Cabin_U     2.368874
+4         Grupo1     1.901232
+14       Cabin_E     1.803372
+26  Title_Master     1.704880
+5         Grupo2     1.484200
+33     Title_Rev     0.951113
+7         Grupo4     0.845492
+31     Title_Mrs     0.753778
+12       Cabin_C     0.664544
+13       Cabin_D     0.648852
+9       Pclass_2     0.566182
+8         Grupo5     0.536748
+22      Title_Dr     0.312253
+20     Title_Don     0.095540
+27    Title_Miss     0.090392
+25   Title_Major     0.089825
+19     Title_Col     0.073256
+6         Grupo3     0.048706
+15       Cabin_F     0.020678
+11       Cabin_B     0.018444
+34     Title_Sir     0.014435
+24    Title_Lady     0.008384
+17       Cabin_T     0.000624
+
+Features sem importância:['Noblesse' 'Cabin_G' 'Title_Dona' 'Title_Jonkheer' 'Title_Mlle'
+ 'Title_Mme' 'Title_Ms' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.179058
+Score de validação cruzada: 0.825714
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1418 ##########
+
+Informações geradas em 03-07-2024 às 14:18.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     03.174603%     09.589041%
+Male/Perished...:  64.912281%     96.825397%     90.410959%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr    31.605407
+3         isMale    19.525197
+1           Fare    13.547818
+0            Age    11.993565
+10      Pclass_3     7.504840
+18       Cabin_U     2.501650
+4         Grupo1     2.377441
+14       Cabin_E     1.520881
+5         Grupo2     1.332599
+9       Pclass_2     1.258010
+26  Title_Master     1.234524
+7         Grupo4     1.087214
+33     Title_Rev     0.936765
+8         Grupo5     0.899313
+13       Cabin_D     0.697284
+22      Title_Dr     0.498998
+12       Cabin_C     0.478700
+31     Title_Mrs     0.445414
+27    Title_Miss     0.157967
+25   Title_Major     0.101138
+6         Grupo3     0.073317
+2       Noblesse     0.061758
+19     Title_Col     0.057010
+20     Title_Don     0.053744
+11       Cabin_B     0.027115
+24    Title_Lady     0.008337
+15       Cabin_F     0.008031
+17       Cabin_T     0.003481
+16       Cabin_G     0.001545
+34     Title_Sir     0.000935
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.236333
+Score de validação cruzada: 0.827619
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1421 ##########
+
+Informações geradas em 03-07-2024 às 14:21.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  40.350877%     03.174603%     08.904110%
+Male/Perished...:  59.649123%     96.825397%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     70.833333%
+Female/Perished.:  00.000000%     00.000000%     29.166667%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr    30.215068
+3         isMale    20.164633
+1           Fare    14.738112
+0            Age    11.108896
+10      Pclass_3     8.572526
+4         Grupo1     2.378266
+2       Noblesse     2.313609
+18       Cabin_U     2.197874
+26  Title_Master     1.950727
+14       Cabin_E     1.218453
+5         Grupo2     1.175962
+7         Grupo4     0.801107
+12       Cabin_C     0.569729
+13       Cabin_D     0.518050
+31     Title_Mrs     0.477664
+9       Pclass_2     0.395790
+33     Title_Rev     0.299200
+8         Grupo5     0.296441
+27    Title_Miss     0.240920
+25   Title_Major     0.169145
+22      Title_Dr     0.103431
+11       Cabin_B     0.028244
+15       Cabin_F     0.020654
+19     Title_Col     0.016718
+34     Title_Sir     0.013378
+24    Title_Lady     0.006674
+20     Title_Don     0.004869
+16       Cabin_G     0.002494
+6         Grupo3     0.001367
+
+Features sem importância:['Cabin_T' 'Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme'
+ 'Title_Ms' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.825768
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1425 ##########
+
+Informações geradas em 03-07-2024 às 14:25.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     03.174603%     08.219178%
+Male/Perished...:  64.912281%     96.825397%     91.780822%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     66.666667%
+Female/Perished.:  00.000000%     00.000000%     33.333333%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr    30.415935
+3         isMale    21.055122
+1           Fare    12.779349
+0            Age    12.500454
+10      Pclass_3     7.939254
+18       Cabin_U     2.571216
+14       Cabin_E     1.933522
+9       Pclass_2     1.793980
+5         Grupo2     1.785182
+26  Title_Master     1.204647
+4         Grupo1     1.178619
+7         Grupo4     1.030523
+33     Title_Rev     0.809654
+13       Cabin_D     0.693147
+8         Grupo5     0.499490
+22      Title_Dr     0.424502
+31     Title_Mrs     0.407463
+12       Cabin_C     0.357745
+27    Title_Miss     0.334701
+2       Noblesse     0.096152
+25   Title_Major     0.068158
+19     Title_Col     0.046350
+15       Cabin_F     0.032545
+6         Grupo3     0.016854
+34     Title_Sir     0.012404
+16       Cabin_G     0.008647
+20     Title_Don     0.002709
+17       Cabin_T     0.000844
+24    Title_Lady     0.000830
+
+Features sem importância:['Cabin_B' 'Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme'
+ 'Title_Ms' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.159966
+Score de validação cruzada: 0.825732
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-1427 ##########
+
+Informações geradas em 03-07-2024 às 14:28.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  31.578947%     04.761905%     08.904110%
+Male/Perished...:  68.421053%     95.238095%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     69.444444%
+Female/Perished.:  00.000000%     00.000000%     30.555556%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+30      Title_Mr    29.815469
+3         isMale    21.708381
+1           Fare    13.274219
+0            Age    11.942231
+10      Pclass_3     7.919445
+18       Cabin_U     2.934185
+4         Grupo1     2.165971
+14       Cabin_E     1.623447
+5         Grupo2     1.508856
+33     Title_Rev     1.108525
+7         Grupo4     1.053811
+26  Title_Master     0.852288
+9       Pclass_2     0.662784
+8         Grupo5     0.645929
+13       Cabin_D     0.597016
+12       Cabin_C     0.503835
+2       Noblesse     0.448783
+31     Title_Mrs     0.440772
+27    Title_Miss     0.391173
+22      Title_Dr     0.204714
+20     Title_Don     0.068968
+19     Title_Col     0.046539
+6         Grupo3     0.030466
+25   Title_Major     0.029590
+24    Title_Lady     0.008924
+16       Cabin_G     0.006496
+11       Cabin_B     0.004159
+34     Title_Sir     0.001417
+15       Cabin_F     0.001394
+17       Cabin_T     0.000212
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.198150
+Score de validação cruzada: 0.821923
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-2006 ##########
+
+Informações geradas em 03-07-2024 às 20:07.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  42.105263%     03.174603%     06.164384%
+Male/Perished...:  57.894737%     96.825397%     93.835616%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     66.666667%
+Female/Perished.:  00.000000%     00.000000%     33.333333%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale    60.024274
+10  Pclass_3    14.520586
+0        Age     9.913913
+18   Cabin_U     7.811532
+1       Fare     6.942463
+5     Grupo2     0.411327
+4     Grupo1     0.292085
+7     Grupo4     0.062229
+14   Cabin_E     0.015119
+8     Grupo5     0.006472
+
+Features sem importância:['Noblesse' 'Grupo3' 'Grupo4' 'Grupo5' 'Pclass_2' 'Cabin_B' 'Cabin_C'
+ 'Cabin_D' 'Cabin_E' 'Cabin_F' 'Cabin_G' 'Cabin_T'].
+
+Coeficiente de Determinação R2: -0.007786
+Score de validação cruzada: 0.807948
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'AUC', 'iterations': 1500, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Depthwise', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 9, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 45, 'loss_function': 'CrossEntropy', 'learning_rate': 0.04699999839067459, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 512}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-2013 ##########
+
+Informações geradas em 03-07-2024 às 20:14.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  52.631579%     07.936508%     06.164384%
+Male/Perished...:  47.368421%     92.063492%     93.835616%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     65.277778%
+Female/Perished.:  00.000000%     00.000000%     34.722222%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale    47.707733
+0        Age    18.337594
+1       Fare    12.585309
+5   Pclass_3    11.955584
+13   Cabin_U     4.539759
+9    Cabin_E     1.635404
+8    Cabin_D     1.208174
+4   Pclass_2     1.129659
+7    Cabin_C     0.455103
+2   Noblesse     0.350278
+6    Cabin_B     0.044176
+10   Cabin_F     0.030793
+11   Cabin_G     0.013900
+12   Cabin_T     0.006532
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.812920
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-2017 ##########
+
+Informações geradas em 03-07-2024 às 20:17.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  43.859649%     06.349206%     05.479452%
+Male/Perished...:  56.140351%     93.650794%     94.520548%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+    variável  importância
+3     isMale    46.046424
+0        Age    21.178969
+10  Pclass_3    11.607307
+1       Fare    10.509836
+18   Cabin_U     3.230778
+14   Cabin_E     1.994286
+5     Grupo2     1.725027
+13   Cabin_D     0.963192
+4     Grupo1     0.921735
+12   Cabin_C     0.579091
+9   Pclass_2     0.566967
+7     Grupo4     0.332170
+2   Noblesse     0.211195
+11   Cabin_B     0.045783
+6     Grupo3     0.042885
+8     Grupo5     0.030648
+16   Cabin_G     0.006048
+15   Cabin_F     0.004727
+17   Cabin_T     0.002933
+
+Não foram identificadas features sem importância.
+
+Coeficiente de Determinação R2: 0.132184
+Score de validação cruzada: 0.817906
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-2022 ##########
+
+Informações geradas em 03-07-2024 às 20:22.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  33.333333%     04.761905%     07.534247%
+Male/Perished...:  66.666667%     95.238095%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+3         isMale    24.952801
+30      Title_Mr    24.520771
+0            Age    13.597497
+1           Fare    11.776810
+10      Pclass_3    10.445956
+18       Cabin_U     2.947754
+14       Cabin_E     2.079872
+33     Title_Rev     1.835912
+13       Cabin_D     1.206937
+7         Grupo4     1.145057
+26  Title_Master     1.048894
+5         Grupo2     0.781578
+4         Grupo1     0.764290
+9       Pclass_2     0.755831
+31     Title_Mrs     0.652292
+22      Title_Dr     0.536605
+12       Cabin_C     0.370956
+27    Title_Miss     0.203826
+8         Grupo5     0.197542
+20     Title_Don     0.066283
+11       Cabin_B     0.044129
+6         Grupo3     0.043000
+2       Noblesse     0.009267
+24    Title_Lady     0.005172
+19     Title_Col     0.002521
+16       Cabin_G     0.002382
+17       Cabin_T     0.002188
+15       Cabin_F     0.002020
+25   Title_Major     0.001858
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.160178
+Score de validação cruzada: 0.819545
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240703-2036 ##########
+
+Informações geradas em 03-07-2024 às 20:36.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  33.333333%     04.761905%     07.534247%
+Male/Perished...:  66.666667%     95.238095%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+3         isMale    24.952801
+30      Title_Mr    24.520771
+0            Age    13.597497
+1           Fare    11.776810
+10      Pclass_3    10.445956
+18       Cabin_U     2.947754
+14       Cabin_E     2.079872
+33     Title_Rev     1.835912
+13       Cabin_D     1.206937
+7         Grupo4     1.145057
+26  Title_Master     1.048894
+5         Grupo2     0.781578
+4         Grupo1     0.764290
+9       Pclass_2     0.755831
+31     Title_Mrs     0.652292
+22      Title_Dr     0.536605
+12       Cabin_C     0.370956
+27    Title_Miss     0.203826
+8         Grupo5     0.197542
+20     Title_Don     0.066283
+11       Cabin_B     0.044129
+6         Grupo3     0.043000
+2       Noblesse     0.009267
+24    Title_Lady     0.005172
+19     Title_Col     0.002521
+16       Cabin_G     0.002382
+17       Cabin_T     0.002188
+15       Cabin_F     0.002020
+25   Title_Major     0.001858
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_Sir' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.160178
+Score de validação cruzada: 0.819545
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240704-0740 ##########
+
+Informações geradas em 04-07-2024 às 07:40.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  38.596491%     04.761905%     08.904110%
+Male/Perished...:  61.403509%     95.238095%     91.095890%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     63.888889%
+Female/Perished.:  00.000000%     00.000000%     36.111111%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+25      Title_Mr    28.386199
+3         isMale    23.142096
+1           Fare    14.098370
+0            Age    11.063813
+5       Pclass_3    10.687020
+13       Cabin_U     2.592898
+9        Cabin_E     2.270842
+4       Pclass_2     1.994138
+28     Title_Rev     1.686866
+8        Cabin_D     1.287179
+21  Title_Master     0.957077
+7        Cabin_C     0.535331
+17      Title_Dr     0.519931
+26     Title_Mrs     0.377738
+22    Title_Miss     0.116736
+15     Title_Don     0.086037
+2       Noblesse     0.050893
+6        Cabin_B     0.048271
+14     Title_Col     0.038564
+29     Title_Sir     0.019526
+10       Cabin_F     0.018103
+20   Title_Major     0.013989
+11       Cabin_G     0.007989
+12       Cabin_T     0.000393
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Lady' 'Title_Mlle' 'Title_Mme'
+ 'Title_Ms' 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.188172
+Score de validação cruzada: 0.829477
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+
+########## INÍCIO DE REGISTRO - MODELO CatBoostClassifier 20240704-0848 ##########
+
+Informações geradas em 04-07-2024 às 08:48.
+
+---===+++ Predicted and historical ranking comparison +++===---
+
+Survived/perished relationship in *TRAINING* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  36.885246%     15.740741%     13.544669%
+Male/Perished...:  63.114754%     84.259259%     86.455331%
+                        *              *              *
+Female/Survived.:  96.808511%     92.105263%     50.000000%
+Female/Perished.:  03.191489%     07.894737%     50.000000%
+
+Survived/perished relationship in *PREDICTED* data:
+                     PClass1        PClass2        Pclass3
+Male/Survived...:  35.087719%     04.761905%     07.534247%
+Male/Perished...:  64.912281%     95.238095%     92.465753%
+                        *              *              *
+Female/Survived.:  100.000000%     100.000000%     59.722222%
+Female/Perished.:  00.000000%     00.000000%     40.277778%
+
+Features que foram utilizadas no modelo e que tiveram relevância no algoritmo:
+        variável  importância
+3         isMale    27.041503
+28      Title_Mr    23.830838
+1           Fare    13.253887
+0            Age    11.645415
+8       Pclass_3    10.762374
+16       Cabin_U     2.407012
+12       Cabin_E     2.020642
+24  Title_Master     1.578381
+31     Title_Rev     1.459292
+4         Grupo1     1.407444
+11       Cabin_D     1.169646
+7       Pclass_2     0.885986
+10       Cabin_C     0.633227
+29     Title_Mrs     0.567166
+5         Grupo2     0.549812
+20      Title_Dr     0.398712
+25    Title_Miss     0.109585
+18     Title_Don     0.092450
+23   Title_Major     0.069922
+17     Title_Col     0.050504
+9        Cabin_B     0.035820
+32     Title_Sir     0.012189
+22    Title_Lady     0.007060
+14       Cabin_G     0.005404
+6         Grupo3     0.002779
+2       Noblesse     0.002473
+15       Cabin_T     0.000441
+13       Cabin_F     0.000035
+
+Features sem importância:['Title_Dona' 'Title_Jonkheer' 'Title_Mlle' 'Title_Mme' 'Title_Ms'
+ 'Title_the Countess'].
+
+Coeficiente de Determinação R2: 0.188172
+Score de validação cruzada: 0.817920
+
+Outliers em 'Fare' identificados.
+
+Parâmetros do modelo:
+{'nan_mode': 'Min', 'eval_metric': 'Logloss', 'iterations': 1000, 'sampling_frequency': 'PerTree', 'leaf_estimation_method': 'Newton', 'od_pval': 0, 'random_score_type': 'NormalWithModelSizeDecrease', 'grow_policy': 'Lossguide', 'penalties_coefficient': 1, 'boosting_type': 'Plain', 'model_shrink_mode': 'Constant', 'feature_border_type': 'GreedyLogSum', 'bayesian_matrix_reg': 0.10000000149011612, 'eval_fraction': 0, 'force_unit_auto_pair_weights': False, 'l2_leaf_reg': 3, 'random_strength': 1, 'od_type': 'Iter', 'rsm': 1, 'boost_from_average': False, 'model_size_reg': 0.5, 'pool_metainfo_options': {'tags': {}}, 'subsample': 0.800000011920929, 'use_best_model': True, 'od_wait': 500, 'random_seed': 1, 'depth': 17, 'posterior_sampling': False, 'border_count': 254, 'target_border': 0.44999998807907104, 'classes_count': 0, 'auto_class_weights': 'None', 'sparse_features_conflict_fraction': 0, 'leaf_estimation_backtracking': 'AnyImprovement', 'best_model_min_trees': 1, 'model_shrink_rate': 0, 'min_data_in_leaf': 39, 'loss_function': 'Logloss', 'learning_rate': 0.03200000151991844, 'score_function': 'L2', 'task_type': 'CPU', 'leaf_estimation_iterations': 10, 'bootstrap_type': 'MVS', 'max_leaves': 20}
+
+=======================================================================
+
+

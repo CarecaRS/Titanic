@@ -1,0 +1,14 @@
+########## INÍCIO DE REGISTRO OPTUNA - MODELO LightGBM Classifier ##########
+
+Informações armazenadas em 01-07-2024 às 14:20.
+
+---===+++ Os melhores parâmetros encontrados +++===---
+
+{'num_leaves': 16, 'max_depth': 3, 'n_estimators': 800, 'learning_rate': 0.044000000000000004, 'min_split_gain': 0.02, 'min_child_weight': 0.022000000000000002, 'min_child_samples': 47, 'subsample': 0.6, 'metric': 'binary_logloss'}
+
+Obtidos na iteração 2
+Valor de score cross-validation 0.8410580645161291
+
+########## FINAL DE REGISTRO OPTUNA - MODELO LightGBM Classifier ##########
+
+
